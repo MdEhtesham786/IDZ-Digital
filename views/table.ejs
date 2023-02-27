@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/table.css">
+    <title>Table</title>
+</head>
+<header>
+    <h1>Registration Successful</h1>
+    <h2>Your Details are Submitted successfully</h2>
+</header>
+<main>
+    <div class="container">
+        <div class="rows">
+            <div class="thead">
+                Name
+            </div>
+            <%if(Data){%>
+                <%Data.forEach((user)=>{%>
+                    <div class="datas">
+                        <p>
+                            <%=user.name%>
+                        </p>
+                    </div>
+                    <% })%>
+                        <%}%>
+        </div>
+        <div class="rows">
+            <div class="thead">Birthday</div>
+
+            <%if(Data){%>
+                <%Data.forEach((user)=>{%>
+                    <div class="datas">
+                        <p>
+                            <%=user.birth_date%>
+                        </p>
+                    </div>
+                    <% })%>
+                        <%}%>
+        </div>
+        <div class="rows">
+            <div class="thead">Email Id</div>
+
+            <%if(Data){%>
+                <%Data.forEach((user)=>{%>
+                    <div class="datas">
+                        <p>
+                            <%=user.email%>
+                        </p>
+                    </div>
+                    <% })%>
+                        <%}%>
+
+        </div>
+    </div>
+
+</main>
+<footer>
+    <div>
+        <a href="/assignment1">Home</a>
+
+    </div>
+</footer>
+<!-- <script src="../static/js/"></script> -->
+
+<body>
+
+</body>
+
+</html>

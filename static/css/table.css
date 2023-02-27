@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-top: 2vw;
+    display: flex;
+    align-items: center;
+    height: 6rem;
+    justify-content: center;
+    /* background-color: blue; */
+    flex-direction: column;
+}
+
+h1 {
+    /* background-color: red; */
+    /* width: 30vw; */
+    font-size: 2.6rem;
+}
+
+h2 {
+    /* background-color: blue; */
+    /* width: 30vw; */
+    font-size: 1.5rem;
+    color: grey;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    min-height: 30rem;
+    display: flex;
+    width: 27rem;
+    border: 2px solid gray;
+    border-radius: 5px;
+    border-right: none;
+    justify-content: space-around;
+}
+
+.rows {
+    width: 9rem;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid gray;
+    font-size: 18px;
+}
+
+
+.thead {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    font-weight: bold;
+    border-bottom: 2px solid gray;
+}
+
+.datas {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    border-bottom: 2px solid gray;
+}
+
+.datas p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 3rem;
+    width: 9rem;
+    text-align: center;
+    padding: 1vw 0;
+    box-sizing: border-box;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 5rem;
+}
+
+footer div {
+    background-color: blue;
+    border: 2px solid white;
+    border-radius: .7vw;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    color: white;
+}
+
+footer div:hover {
+    background-color: white;
+    color: blue;
+    border-color: blue;
+}
+
+footer div:hover a {
+    color: blue;
+}
+
+footer a {
+    height: inherit;
+    width: inherit;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: white;
+
+}

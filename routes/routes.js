@@ -1,11 +1,12 @@
 const express = require('express');
-const { register, registerPage, tablePage, Delete } = require('../controllers/control');
+const { register, registerPage, tablePage, Delete, employeesPage } = require('../controllers/control');
 const router = express.Router();
 router.get('/assignment1', registerPage);
 router.get('/assignment1-data', tablePage);
-router.get('/assignment2', (req, res) => {
-    return res.render('employees');
+router.get('/', (req, res) => {
+    return res.redirect('/assignment1');
 });
+router.get('/assignment2', employeesPage);
 router.get('/deleteData', Delete);
 router.post('/register', register);
 router.get('*', (req, res) => {

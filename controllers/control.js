@@ -35,6 +35,15 @@ exports.register = async (req, res) => {
 
     }
 };
+exports.employeesPage = async (req, res) => {
+    try {
+        return res.render('employees');
+    } catch (err) {
+        console.log(err);
+        res.send(err);
+
+    }
+};
 exports.Delete = async (req, res) => {
     try {
         await User.remove();

@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 const app = express();
 const connectDB = require('./db/connect');
 app.set('view engine', 'ejs');
+const User = require('./models/userModel');
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.set('views', 'views');
@@ -13,9 +14,6 @@ app.use('/static', express.static('static'));
 mongoose.set('strictQuery', true);
 const router = require('./routes/routes');
 app.use('/', router);
-app.get('/', (req, res) => {
-    res.send('Working');
-});
 
 const start = async () => {
     try {

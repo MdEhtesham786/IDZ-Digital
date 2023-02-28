@@ -67,7 +67,7 @@ allEmployees.forEach((e, i) => {
         <p class="salary">${target.salary}</p>
         </div>
 
-        <button id="home">Home</button>
+        <button id="home">Back</button>
         `;
 
     });

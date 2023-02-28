@@ -1,0 +1,46 @@
+@media(max-width:500px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 8rem);
+        width: 24rem;
+    }
+
+    .rows {
+        /* width: 8rem; */
+    }
+}
+
+@media(max-width:400px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 7rem);
+
+        width: 21rem;
+    }
+
+    .rows {
+        /* width: 7rem; */
+    }
+
+    footer div {
+        height: 1.8rem;
+    }
+
+    footer a {
+        font-size: 1.5rem;
+    }
+}

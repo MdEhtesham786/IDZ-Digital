@@ -1,0 +1,113 @@
+@media (max-width:1000px) {
+    html {
+        /* background-color: black; */
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        /* font-size: 1rem; */
+    }
+
+    .inputs label {
+        font-size: 1.1rem;
+    }
+
+    .inputs input {
+        height: 2rem;
+    }
+}
+
+@media(max-width:840px) {
+    .container {
+        width: 40vw;
+    }
+
+    h1 {
+        width: 40vw;
+        font-size: 2rem;
+    }
+
+    h2 {
+        width: 40vw;
+
+        font-size: 1rem;
+    }
+
+    .inputs label {
+        font-size: 1rem;
+    }
+
+    .inputs input {
+        height: 1.7rem;
+    }
+}
+
+@media (max-width:675px) {
+    .container {
+        width: 50vw;
+    }
+
+    h1 {
+        width: 50vw;
+    }
+
+    h2 {
+        width: 50vw;
+    }
+}
+
+@media (max-width:500px) {
+    .inputs input[type='date'] {
+        width: 95%;
+    }
+
+    .inputs input[type='submit'] {
+        height: 2rem;
+    }
+
+
+    .container {
+        width: 70vw;
+    }
+
+    h1, h2 {
+        width: 70vw;
+    }
+}
+
+@media(max-width:400px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: .9rem;
+    }
+
+    .container {
+        width: 70vw;
+    }
+
+
+}
+
+/* @media(max-width:675px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: .9rem;
+    }
+
+    .inputs label {
+        font-size: .8rem;
+    }
+
+    .inputs input {
+        height: 1.2rem;
+    }
+} */

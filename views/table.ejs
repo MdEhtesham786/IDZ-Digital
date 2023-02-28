@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/table.css">
+    <link rel="stylesheet" href="../static/css/table-resp.css">
     <title>Table</title>
 </head>
 <header>
@@ -14,10 +15,11 @@
 </header>
 <main>
     <div class="container">
-        <div class="rows">
-            <div class="thead">
-                Name
-            </div>
+        <div class="titles">Name</div>
+        <div class="titles">Birthday</div>
+        <div class="titles">Email Id</div>
+        <div class="rows ">
+
             <%if(Data){%>
                 <%Data.forEach((user)=>{%>
                     <div class="datas">
@@ -29,7 +31,6 @@
                         <%}%>
         </div>
         <div class="rows">
-            <div class="thead">Birthday</div>
 
             <%if(Data){%>
                 <%Data.forEach((user)=>{%>
@@ -41,8 +42,7 @@
                     <% })%>
                         <%}%>
         </div>
-        <div class="rows">
-            <div class="thead">Email Id</div>
+        <div class="rows removeborder">
 
             <%if(Data){%>
                 <%Data.forEach((user)=>{%>
@@ -64,7 +64,7 @@
 
     </div>
 </footer>
-<!-- <script src="../static/js/"></script> -->
+<script src="../static/js/table.js"></script>
 
 <body>
 

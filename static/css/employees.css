@@ -15,12 +15,15 @@
 
 .single {
     height: 20vw;
+    min-height: 10rem;
+    min-width: 15rem;
     width: 30vw;
     background-color: white;
     border-radius: 5px;
     position: absolute;
-    top: 15vw;
-    left: 35vw;
+    top: 13rem;
+    /* transform: translate(110%, 15rem); */
+    left: 34vw;
     display: none;
     justify-content: space-around;
     align-items: center;
@@ -32,12 +35,12 @@
 .single button {
     cursor: pointer;
     width: 7vw;
+    min-width: 4.6rem;
     color: white;
     border-radius: 5px;
     border: 2px solid darkblue;
     font-size: 1.3rem;
     background-color: blue;
-    transition: all .2s ease-in-out;
 }
 
 .single button:hover {
